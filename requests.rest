@@ -1,0 +1,17 @@
+POST http://localhost:8080/api/users
+content-type: application/json
+
+{
+    "name": "Itachi Uchiha",
+    "email": "itachi@konoha.com",
+    "password": "000000"
+}
+
+###
+POST http://localhost:8080/api/auth/login
+content-type: application/json
+
+{
+    "email": "itachi@konoha.com",
+    "password": "000000"
+}
