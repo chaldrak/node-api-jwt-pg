@@ -7,4 +7,4 @@ function jwtTokens({user_id, user_name, user_email}) {
     return ({accessToken, refreshToken});
 }
 
-export default {jwtTokens};
+export {jwtTokens};

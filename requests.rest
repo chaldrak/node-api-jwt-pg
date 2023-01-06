@@ -1,5 +1,5 @@
 POST http://localhost:8080/api/users
-content-type: application/json
+Content-type: application/json
 
 {
     "name": "Itachi Uchiha",
@@ -9,9 +9,19 @@ content-type: application/json
 
 ###
 POST http://localhost:8080/api/auth/login
-content-type: application/json
+Content-type: application/json
 
 {
     "email": "itachi@konoha.com",
     "password": "000000"
 }
+
+###
+GET http://localhost:8080/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZWUwYzc2NGMtOTFiOS00NDgwLTkxNzYtYmIwZGU1M2VjZjQzIiwidXNlcl9uYW1lIjoiSXRhY2hpIFVjaGloYSIsInVzZXJfZW1haWwiOiJpdGFjaGlAa29ub2hhLmNvbSIsImlhdCI6MTY3MzAwOTUyMCwiZXhwIjoxNjczMDA5NTQwfQ.9nr5O1pfAEiURLIc1nJKwRukBdVP-6R2r4nSOUjf_EI
+
+###
+GET http://localhost:8080/api/auth/refresh_token
+
+###
+DELETE http://localhost:8080/api/auth/refresh_token  
