@@ -21,7 +21,24 @@
         }
 
         main button:hover {
-            background-color: #111;
+            background-color: #222;
+        }
+
+        main form input {
+            height: 40px;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        main h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        main h2 {
+            font-size: 1rem;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -32,8 +49,8 @@
             <div class="flex flex-col items-center justify-center text-center space-y-5">
                 <form class="flex flex-col items-center space-y-3">
                     <h1>LOGIN</h1>
-                    <input type="text">
-                    <input type="text">
+                    <input type="text" name="email">
+                    <input type="password" name="password">
                     <button>LOGIN</button>
                 </form>
                 <div>
@@ -51,5 +68,8 @@
             </div>
         </div>
     </main>
+
+    <!-- <script type="module" src="jwt-decode.js"></script> -->
+    <script type="module" src="script.js"></script>
 </body>
 </html>
