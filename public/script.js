@@ -29,8 +29,8 @@ form.onsubmit = async e => {
 async function login(credentials) {
     const res = await fetch(`${api_url}/auth/login`, {
         method: 'POST',
-        credentials:'include',
-        cache: 'no-cache',
+        // credentials:'include',
+        // cache: 'no-cache',
         headers: {
             'Content-Type': 'application/json'
         },
